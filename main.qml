@@ -74,8 +74,16 @@ ApplicationWindow {
         }
         Rectangle{
             Layout.fillWidth: true
-            height:60
+            height:40
             color:"#00AAAA"
+            RowLayout{
+                anchors.fill:parent
+                Item{
+                    Layout.preferredWidth: parent.width/10
+                    Layout.fillHeight:true
+                    Layout.fillWidth: true
+                }
+            }
         }
     }
 
